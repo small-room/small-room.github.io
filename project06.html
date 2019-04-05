@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="description" content="Creative Visual Communication – Design Studio. Adelaide / New York. Open 24/7.">
+		<meta name="keywords" content="graphic design, graphic, design, adelaide, australia, visual, communication, studio, art,">
+		<meta name="author" content="Rafal Liszewski">
+		<title> small room — christmas card </title>
+		<link rel="icon" href="icon.png">
+		<link rel="stylesheet" type="text/css" media="screen" href="style_project.css">
+		<!--preview links-->
+		<meta property="og:image" content="http://www.smallroom.com.au/projects/cc_00.png">
+		<meta property="og:description" content="Some questionable fridge material.">
+		<meta property="og:title" content="small room — christmas card">
+		<meta name="twitter:title" content="small room — christmas card">
+  </head>
+
+  <body onload="shuffleTitle()">
+
+		<div id="leftColumn">
+			<h1>small room</h1>
+			<a href="index.html"><p>return home</p></a>
+			<br>
+			<h2>— christmas card</h2>
+			<br>
+			<div class="mySlides" onclick="plusDivs(+1)" ><img src="projects/cc_00.png"><p>1/6</p></div>
+			<div class="mySlides" onclick="plusDivs(+1)" ><img src="projects/cc_02.jpg"><p>2/6</p></div>
+			<div class="mySlides" onclick="plusDivs(+1)" ><img src="projects/cc_03.jpg"><p>3/6</p></div>
+			<div class="mySlides" onclick="plusDivs(+1)" ><img src="projects/cc_04.jpg"><p>4/6</p></div>
+			<div class="mySlides" onclick="plusDivs(+1)" ><img src="projects/cc_05.jpg"><p>5/6</p></div>
+			<div class="mySlides" onclick="plusDivs(+1)" ><img src="projects/cc_06.jpg"><p>6/6</p></div>
+			<br>
+			<p>An interactive Christmas card made to send to
+				friends and family.<br><br> Some questionable fridge material.</p>
+		</div>
+
+		<script>
+		var slideIndex = 1;
+		showDivs(slideIndex);
+
+		function plusDivs(n) {
+			showDivs(slideIndex += n);
+		}
+
+		function showDivs(n) {
+			var i;
+			var x = document.getElementsByClassName("mySlides");
+			if (n > x.length) {slideIndex = 1}
+			if (n < 1) {slideIndex = x.length} ;
+			for (i = 0; i < x.length; i++) {
+					x[i].style.display = "none";
+			}
+			x[slideIndex-1].style.display = "block";
+		}
+		</script>
+
+  </body>
+
+<!-- two click system for mobiles
+
+	<img onclick="myFunction()" src="box.svg">
+	<a href="project01.html"><img id="panel" src="content/aa_01.jpg"></a>
+	<script>
+		function myFunction() {
+		    document.getElementsByClassName("panel").style.display = "block";
+		}
+	</script>
+
+-->
+
+</html>

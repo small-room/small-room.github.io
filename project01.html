@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="description" content="Creative Visual Communication – Design Studio. Adelaide / New York. Open 24/7.">
+		<meta name="keywords" content="graphic design, graphic, design, adelaide, australia, visual, communication, studio, art,">
+		<meta name="author" content="Rafal Liszewski">
+		<title> Small Room — addison ash</title>
+		<link rel="icon" href="icon.png">
+		<link rel="stylesheet" type="text/css" media="screen" href="style_project.css">
+		<!--preview links-->
+		<meta property="og:image" content="http://www.smallroom.com.au/projects/aa_00.jpg">
+		<meta property="og:description" content="An independent fashion	label, designed and made in Adelaide.">
+		<meta property="og:title" content="small room — addison ash">
+		<meta name="twitter:title" content="small room — addison ash">
+  </head>
+
+  <body onload="shuffleTitle()">
+
+		<div id="leftColumn">
+			<h1>small room</h1>
+			<a href="index.html"><p>return home</p></a>
+			<br>
+			<h2>— addison ash</h2>
+			<br>
+			<div class="mySlides" onclick="plusDivs(+1)" ><img src="projects/aa_01.jpg"><p>1/6</p></div>
+			<div class="mySlides" onclick="plusDivs(+1)" ><img src="projects/aa_02.jpg"><p>2/6</p></div>
+			<div class="mySlides" onclick="plusDivs(+1)" ><img src="projects/aa_03.jpg"><p>3/6</p></div>
+			<div class="mySlides" onclick="plusDivs(+1)" ><img src="projects/aa_04.jpg"><p>4/6</p></div>
+			<div class="mySlides" onclick="plusDivs(+1)" ><img src="projects/aa_site.jpg"><p>5/6</p></div>
+			<div class="mySlides" onclick="plusDivs(+1)" ><img src="projects/aa_00.jpg"><p>6/6</p></div>
+			<br>
+			<p>An independent fashion	label, designed and made in Adelaide.
+				The branding relates to the angular	and bold, yet simple nature of the
+				garments themselves.
+				<br><br>
+				Applied to business cards, sew-in labels,
+				swing tags and website.<br><br>
+				<a href="https://www.addisonash.com/" target="_blank">www.addisonash.com</a></p>
+		</div>
+
+		<script>
+		var slideIndex = 1;
+		showDivs(slideIndex);
+
+		function plusDivs(n) {
+			showDivs(slideIndex += n);
+		}
+
+		function showDivs(n) {
+			var i;
+			var x = document.getElementsByClassName("mySlides");
+			if (n > x.length) {slideIndex = 1}
+			if (n < 1) {slideIndex = x.length} ;
+			for (i = 0; i < x.length; i++) {
+					x[i].style.display = "none";
+			}
+			x[slideIndex-1].style.display = "block";
+		}
+		</script>
+
+  </body>
+
+</html>
