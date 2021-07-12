@@ -1,3 +1,3 @@
 # small-room.github.io
-## graphic design studio
-### we do everything (sometimes)
+## Ongoing creative project of 
+### @angusplunkett, @raf_lisz and @slumdavemillionaire.
