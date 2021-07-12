@@ -22,7 +22,6 @@ time, mark, audio, video {
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
-	background-color: #d1d2d3;
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure,
@@ -32,6 +31,11 @@ footer, header, hgroup, menu, nav, section {
 body {
 	line-height: 1;
 	cursor: url('pointer.svg'), auto;
+    background-image: url('welcome.gif');
+    background-size: cover;
+    height: 100vh;
+    padding:0;
+    margin:0;
 }
 ol, ul {
 	list-style: none;
@@ -70,27 +74,13 @@ table {
     font-style: normal;
 }
 
-h1 {
-	font-family: 'H_Web', sans-serif;
-	font-weight: bolder;
-	font-size: 2rem;
-	line-height: 1.3;
-}
-
-h2 {
-	font-family: 'H_Web', sans-serif;
-	font-weight: lighter;
-	font-size: 1.4rem;
-	line-height: 1.5;
-	padding-top: ; /* FIX  */
-	padding-bottom: ; /* FIX  */
-}
-
 p {
 	font-family: 'H_Web', sans-serif;
 	font-weight: lighter;
-	font-size: 1rem;
+	font-size: 0.9rem;
 	line-height: 1.5;
+    text-align: center;
+    color: #FFFFFF;
 }
 
 span {
@@ -101,229 +91,27 @@ span {
 }
 
 a {text-decoration: none;
-	color: #FFFFFF;
-	margin-bottom: 30px; /* FIX  */
-	margin-top: 5px; /* FIX  */
+	color: #d1d2d3;
 }
 
-a:hover {color: #000000;cursor: url('pointerHover.svg'), auto;}
+a:hover {color: red;cursor: url('pointerHover.svg'), auto;}
 
 /* ~ body of work ~ */
 
-#leftColumn {
-	position: static;
-	text-align: left;
-	padding-bottom: 50px;
-	padding-top: 50px;
-	padding-left: 35px;
-	padding-right: 35px;
-	max-width: 300px;
+#entrance {
+    position: absolute;
+    margin: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    max-width: 400px;
+    height:400px;
 }
 
 img {
+    display: block;
 	max-width: 100%;
-	height: auto;
-}
-
-.slid, .zineSlides	 {
-	padding-top: 5px;
-}
-
-/* ~ image handling ~ / */
-
-#preload {
-	position: absolute;
-	display: none;
-	z-index: -999;
-}
-
-/* – projects */
-
-#projectAddison{
-	display: block;
- 	width: 100%;
- 	height: 300px;
- 	background-image: url(box.svg);
-	background-size: contain;
-	background-repeat: no-repeat;
-}
-#projectAddison:hover, #projectAddison:active{
-	background-image: url(hover/hover_aa.svg);
-}
-
-#projectHannah{
-	display: block;
- 	width: 100%;
- 	height: 300px;
- 	background-image: url(box.svg);
-	background-size: contain;
-	background-repeat: no-repeat;
-}
-#projectHannah:hover, #projectHannah:active{
-	background-image: url(hover/hover_hbp.svg);
-}
-
-#projectPortside{
-	display: block;
- 	width: 100%;
- 	height: 300px;
- 	background-image: url(box.svg);
-	background-size: contain;
-	background-repeat: no-repeat;
-}
-#projectPortside:hover, #projectPortside:active{
-	background-image: url(hover/hover_ps.svg);
-}
-
-#projectMeristems{
-	display: block;
- 	width: 100%;
- 	height: 300px;
- 	background-image: url(box.svg);
-	background-size: contain;
-	background-repeat: no-repeat;
-}
-#projectMeristems:hover, #projectMeristems:active{
-	background-image: url(hover/hover_tm.svg);
-}
-
-#projectDeath{
-	display: block;
- 	width: 100%;
- 	height: 300px;
- 	background-image: url(box.svg);
-	background-size: contain;
-	background-repeat: no-repeat;
-}
-#projectDeath:hover, #projectDeath:active{
-	background-image: url(hover/hover_doad.svg);
-}
-
-#projectChristmas{
-	display: block;
- 	width: 100%;
- 	height: 300px;
- 	background-image: url(box.svg);
-	background-size: contain;
-	background-repeat: no-repeat;
-}
-#projectChristmas:hover, #projectChristmas:active{
-	background-image: url(hover/hover_cc.svg);
-}
-
-/* –  social */
-
-#socialInstagram{
-	display: block;
- 	width: 100%;
- 	height: 300px;
- 	background-image: url(box.svg);
-	background-size: contain;
-	background-repeat: no-repeat;
-}
-#socialInstagram:hover, #socialInstagram:active{
-	background-image: url(hover/hover_instagram.jpg);
-}
-
-#socialTwitter{
-	display: block;
- 	width: 100%;
- 	height: 300px;
- 	background-image: url(box.svg);
-	background-size: contain;
-	background-repeat: no-repeat;
-}
-#socialTwitter:hover, #socialTwitter:active{
-	background-image: url(hover/hover_twitter.jpg);
-}
-
-#socialFacebook{
-	display: block;
- 	width: 100%;
- 	height: 300px;
- 	background-image: url(box.svg);
-	background-size: contain;
-	background-repeat: no-repeat;
-}
-#socialFacebook:hover, #socialFacebook:active{
-	background-image: url(hover/hover_facebook.jpg);
-}
-
-/* – family & friends */
-
-#hotelFriend1{
-	display: block;
- 	width: 100%;
- 	height: 300px;
- 	background-image: url(box.svg);
-	background-size: contain;
-	background-repeat: no-repeat;
-}
-#hotelFriend1:hover, #hotelFriend1:active{
-	background-image: url(family_friends/ff_man.svg);
-}
-#hotelFriend2{
-	display: block;
- 	width: 100%;
- 	height: 300px;
- 	background-image: url(box.svg);
-	background-size: contain;
-	background-repeat: no-repeat;
-}
-#hotelFriend2:hover, #hotelFriend2:active{
-	background-image: url(family_friends/ff_jobs.svg);
-}
-#hotelFriend3{
-	display: block;
- 	width: 100%;
- 	height: 300px;
- 	background-image: url(box.svg);
-	background-size: contain;
-	background-repeat: no-repeat;
-}
-#hotelFriend3:hover, #hotelFriend3:active{
-	background-image: url(family_friends/ff_frog.svg);
-}
-#hotelFriend4{
-	display: block;
- 	width: 100%;
- 	height: 300px;
- 	background-image: url(box.svg);
-	background-size: contain;
-	background-repeat: no-repeat;
-}
-#hotelFriend4:hover, #hotelFriend4:active{
-	background-image: url(family_friends/ff_gaff.svg);
-}
-
-/* ~ maps ~ */
-
-#iftop {
-	position: absolute;
-	top: 0;
-	z-index: 0;
-	overflow:hidden;
-	overflow-x:hidden;
-	overflow-y:hidden;
-}
-
-#ifbot {
-	position: absolute;
-	bottom: 0;
-	z-index: 0;
-	overflow:hidden;
-	overflow-x:hidden;
-	overflow-y:hidden;
-}
-
-#gohomeFriend {
-	position: absolute;
-	margin: auto;
-	top: 0;
-	right: 0;
-	bottom: 0;
-	left: 0;
-	width: 100px;
-	height: 100px;
-	z-index: 6;
 }
